@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9"/>
+	  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HackatonCode8.Application\HackatonCode8.Application.csproj" />
+    <ProjectReference Include="..\HackatonCode8.Infrastructure\HackatonCode8.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
