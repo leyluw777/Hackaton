@@ -65,11 +65,6 @@ namespace HackatonCode8.Infrastructure.Persistence
 		/// Configures the options for the database context.
 		/// </summary>
 		/// <param name="optionsBuilder">The options builder used to configure the options.</param>
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		{
-			
-
-		}
 
 		/// <summary>
 		/// Saves all changes made in this context to the database asynchronously.

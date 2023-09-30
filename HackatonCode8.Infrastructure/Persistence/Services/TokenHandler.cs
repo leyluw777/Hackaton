@@ -53,7 +53,7 @@ namespace HackatonCode8.Infrastructure.Persistence.Services
         }
         private async  Task<IEnumerable<Claim>> SetClaims(AppUser user)
         {
-            var userRoles = await _userManager.GetRolesAsync(user);
+ 
 		
             var claims = new List<Claim>();
             claims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id));
@@ -61,7 +61,7 @@ namespace HackatonCode8.Infrastructure.Persistence.Services
             if (!string.IsNullOrEmpty(user.UserName))
             {
                 claims.Add(new Claim(ClaimTypes.Name, user.UserName));
-                claims.Add(new Claim(ClaimTypes.Role, userRoles[0]));
+               
 
                 
             }

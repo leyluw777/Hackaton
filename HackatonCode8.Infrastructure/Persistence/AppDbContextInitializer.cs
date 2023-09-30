@@ -71,7 +71,7 @@ namespace HackatonCode8.Infrastructure.Persistence
 		public async Task TrySeedAsync()
 		{
 
-			AppUser admin = new AppUser { UserName = "admin", Email = "admin123@gmail.com"  };
+			AppUser admin = new AppUser { UserName = "admin123", Email = "admin123@gmail.com"  };
 
 
 
@@ -83,7 +83,7 @@ namespace HackatonCode8.Infrastructure.Persistence
 				var a = await _userManager.CreateAsync(admin, "Admin123!");
 
 
-				await _userManager.AddToRoleAsync(admin, "Admin");
+				
 
 
 			}

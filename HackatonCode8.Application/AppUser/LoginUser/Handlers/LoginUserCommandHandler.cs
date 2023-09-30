@@ -36,12 +36,11 @@ namespace HackatonCode8.Application.AppUser.LoginUser.Handlers
 			var result = await _userManager.CheckPasswordAsync(user, request.Password);
 
 			if (!result) throw new Exception("Authentication error");
-			//var accessToken = await _tokenHandler.CreateAccessToken(1200, user);
+			var accessToken = await _tokenHandler.CreateAccessToken(1200, user);
 
 			return new LoginUserResponseCommand()
 			{
-				Token = null,
-
+				Token = accessToken,
 			};
 		}
 	}
